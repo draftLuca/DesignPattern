@@ -97,7 +97,7 @@ class Singleton4 {
  *
  */
 class Singleton5 {
-    //加volatile
+    //加volatile 防止指令重排 线程拿到未初始化过的引用
     private static volatile Singleton5 instance;
 
     private Singleton5() {}
